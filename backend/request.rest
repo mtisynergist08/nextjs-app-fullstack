@@ -1,0 +1,97 @@
+###
+// USER Profile
+GET http://localhost:8000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbGxmem43d28wMDAwdHNkY3N3bDl4MDgyIiwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTI0NzE3NTUsImV4cCI6MTY5MjQ3MTc4NX0.YpNGoTGgOB6L-Qc2f5dIEgIkqT1PUDTCV8ct5mB7Mpk
+
+
+
+###
+// User Login
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "123456"
+}
+
+###
+// Refresh user token
+GET http://localhost:8000/refresh
+
+
+###
+// Logout user
+DELETE http://localhost:8000/logout
+
+
+###
+// User Creation/Registeration
+POST http://localhost:8000/users
+Content-Type: application/json
+{
+    "name" : "",
+    "email": "",
+    "password": "",
+    "image": "",
+    "role": "",
+}
+
+###
+// View all user list
+GET http://localhost:8000/users
+
+###
+// View individual user base on ID
+// Paste the ID after users/:ID
+GET http://localhost:8000/users/
+
+###
+// Update user information using ID
+// Put your user id after users/
+PATCH http://localhost:8000/users/
+
+###
+// Delete user base on the user ID
+// Put your user id after users/
+DELETE http://localhost:8000/users/
+
+###
+// Product Creation/Registeration
+POST http://localhost:8000/products
+Content-Type: application/json
+{
+    "name": "",
+    "price": ""
+}
+
+###
+// Get all product list
+GET http://localhost:8000/products
+
+###
+// Get product base on ID
+GET http://localhost:8000/products/
+
+
+###
+// Update product base on ID
+PATCH http://localhost:8000/products/
+
+###
+// Delete product base ID
+DELETE http://localhost:8000/products/
+
+
+###
+// Department Creation
+POST http://localhost:8000/departments
+Content-Type: application/json
+{
+    "name": ""
+}
+
+###
+// List all departments
+GET http://localhost:8000/departments
+
