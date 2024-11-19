@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@quixo3/prisma-session-store": "^3.1.13",
-    "cookie-parser": "^1.4.6",
+    "cookie-parser": "^1.4.7",
     "jsonwebtoken": "^9.0.1",
     "prettier": "^3.0.2",
     "uuid": "^9.0.0"
